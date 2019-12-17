@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+.news{ width:1200px; overflow:hidden; border:#d8dade solid 1px; margin:20px auto 15px;min-height: 440px;background-color:#fff;}
+.news_l{ float:left; width:237px;min-height:440px;}
+.news_l li{ height:39px; border-bottom:#d8dade solid 1px;}
+.news_l li a{ height:39px; display:block; line-height:39px; background:url(http://static.lllnet.cn/zj-web/static/images/zjImages/index_1.png) 16px -383px no-repeat; padding-left:28px; font-size:14px;}
+.news_l .ne_li{ background:#2c72d1}
+.news_l .ne_li a{ font-weight:bold; color:#eeeeee; background:url(http://static.lllnet.cn/zj-web/static/images/zjImages/index_1.png) 16px -334px no-repeat }
+.news_r,.news_rv{ margin-left:237px; border-left:#d8dade solid 1px; padding:0 22px 20px;min-height:440px;}
+.news_r dt{ height:47px; border-bottom:#d8dade solid 1px; margin-bottom:10px;  position:relative; }
+.news_r dt b{ float:left; height:47px; line-height:47px; border-bottom:#2c72d1 solid 2px; padding:0px 10px; font-size:18px; font-family:"微软雅黑"; color:#2c72d1}
+.news_r dt span{     
+    text-align: center;
+    
+    display: block;
+    margin-top: 4px; }
+.news_r dt span a{ color:#666}
+.diguo{ height:43px; border-bottom:#CCC dotted 1px; background:url(http://static.lllnet.cn/zj-web/static/images/zjImages/index_1.png) 0px 21px no-repeat; line-height:43px;}
+.diguo a{ float:left; padding-left:13px; overflow:hidden; line-height:43px; white-space:nowrap; text-overflow:ellipsis; width:630px; font-size:14px;}
+.diguo span{ float:right; line-height:43px; font-size:12px; color:#999}
+dt.articleInfo {
+ 
+    height: 60px;
+}
+h2.articleTitle {
+    text-align: center;
+}
+a.toBack {
+ 
+    position: absolute;
+    top: -45px;
+    right: 0;
+}
+ 
+.news_banner{background:url(http://static.lllnet.cn/zj-web/static/images/news_banner.jpg) center top no-repeat; width:100%; height:186px; margin-bottom:20px;}
