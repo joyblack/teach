@@ -6,7 +6,7 @@ use think\Controller;
 class IndexController extends Controller
 {
     public function index() {
-        return $this->fetch();
+        return $this -> fetch();
     }
 
     public function hello($name = 'ThinkPHP5')
