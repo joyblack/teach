@@ -4,6 +4,12 @@ Route::get('think', function () {
 });
 
 Route::get('hello/:name', 'index/hello');
+/**
+ * login
+ */
+Route::group([], function(){
+    Route::post('login/login', 'login');
+})->prefix('login/')->allowCrossDomain();
 
 /**
  * user
@@ -37,6 +43,10 @@ Route::group([], function(){
  */
 Route::group([], function(){
     Route::post('upload/expert', 'expert');
+    Route::post('upload/newsBanner', 'newsBanner');
+    Route::post('upload/newsPhoto', 'newsPhoto');
+    Route::post('upload/infoBanner', 'infoBanner');
+    Route::post('upload/infoPhoto', 'infoPhoto');
 })->prefix('upload/')->allowCrossDomain();
 
 /**
@@ -44,7 +54,35 @@ Route::group([], function(){
  */
 Route::group([], function(){
     Route::get('download/expert/:id', 'expert');
+    Route::get('download/newsBanner/:id', 'newsBanner');
+    Route::get('download/newsPhoto/:id', 'newsPhoto');
+    Route::get('download/infoBanner/:id', 'infoBanner');
+    Route::get('download/infoPhoto/:id', 'infoPhoto');
 })->prefix('download/')->allowCrossDomain();
+
+/**
+ * news
+ */
+Route::group([], function(){
+    Route::post('news/add', 'add');
+    Route::delete('news/delete/:id', 'delete');
+    Route::get('news/get/:id', 'get');
+    Route::post('news/page', 'page');
+    Route::put('news/edit', 'edit');
+    Route::put('news/status/:id/:status', 'status');
+})->prefix('news/')->allowCrossDomain();
+
+/**
+ * info
+ */
+Route::group([], function(){
+    Route::post('info/add', 'add');
+    Route::delete('info/delete/:id', 'delete');
+    Route::get('info/get/:id', 'get');
+    Route::post('info/page', 'page');
+    Route::put('info/edit', 'edit');
+    Route::put('info/status/:id/:status', 'status');
+})->prefix('info/')->allowCrossDomain();
 
 return [
 
